@@ -476,7 +476,7 @@ async def start(client, message):
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         try:
             check_if = await is_user_on_chat(client,-1001998724140 , message.from_user.id)
-    if not check_if:
+            if not check_if:
         k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Before using me kindly join @tigerhunt_movies"
 return
         )
