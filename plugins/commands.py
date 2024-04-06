@@ -480,7 +480,7 @@ async def start(client, message):
             if not check_if:
                 k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Before using me kindly join @tigerhunt_movies"
                 return
-        )
+                )
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
