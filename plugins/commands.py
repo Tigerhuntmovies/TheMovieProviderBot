@@ -477,8 +477,8 @@ async def start(client, message):
         try:
             check_if = await is_user_on_chat(client,-1001998724140 , message.from_user.id)
             if not check_if:
-        k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Before using me kindly join @tigerhunt_movies"
-return
+                k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Before using me kindly join @tigerhunt_movies"
+                return
         )
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
