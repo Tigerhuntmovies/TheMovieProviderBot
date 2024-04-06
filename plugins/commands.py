@@ -1,4 +1,5 @@
 import os
+from tools import is_user_on_chat
 import logging
 import random
 import asyncio
