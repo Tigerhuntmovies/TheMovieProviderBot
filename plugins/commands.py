@@ -531,18 +531,8 @@ async def start(client, message):
         f_caption = f" {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
 
     check_if = await is_user_on_chat(client,-1001998724140 , message.from_user.id)
-            if not check_if:
-                k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Before using me kindly join @tigerhunt_movies") 
-                return
-            InlineKeyboardButton("♻️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-        ],[
-            InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
-        ]]
-        await message.reply_text(
-            text="<b>👋 ʜᴇʏ ᴛʜᴇʀᴇ,\n\n📌 <u>ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ</u>.</b>",
-            protect_content=True,
-            reply_markup=InlineKeyboardMarkup(btn)
-        )
+    if not check_if:
+        k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Before using me kindly join @tigerhunt_movies") 
         return
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
