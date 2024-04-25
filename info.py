@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8
 CODE = (environ.get('CODE', 'https://ibb.co/C5RvXYx'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'moneycase.link'))
-STREAM_API = (environ.get('STREAM_API', 'e1606ccf87cce25431e7e6058b622da8318a32c6'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'zipshort.net'))
+STREAM_API = (environ.get('STREAM_API', '18905f8a6b7c6f9d73839080f2a113a9f6372993'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/howto_verify/2'))
 
 # Admins, Channels & Users
@@ -59,8 +59,8 @@ VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( F
 HOWTOVERIFY = environ.get('HOWTOVERIFY','https://t.me/howto_verify/2') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneycase.link')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e1606ccf87cce25431e7e6058b622da8318a32c6')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'zipshort.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', '18905f8a6b7c6f9d73839080f2a113a9f6372993')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
